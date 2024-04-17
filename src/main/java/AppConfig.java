@@ -15,7 +15,7 @@ public class AppConfig {
     }
 
     @Bean(name = "cat")
-    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    @Scope("prototype")
         public Cat getCat() {
         Cat cat = new Cat();
         cat.setMessage("Cat");
